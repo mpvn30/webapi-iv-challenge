@@ -7,6 +7,10 @@ server.get('/', (req, res) => {
   res.status(200).json({ message: process.env.GREETING });
 });
 
+server.get('/', (req, res) => {
+    res.status(200).json({ message: "Hello" });
+  });
+
 const port = process.env.PORT || 5000;
 
 server.listen(port, () => {
